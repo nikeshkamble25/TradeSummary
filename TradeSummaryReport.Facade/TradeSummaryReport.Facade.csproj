@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TradeSummaryReport.Dto\TradeSummaryReport.Dto.csproj" />
+    <ProjectReference Include="..\TradeSummaryReport.Extensions\TradeSummaryReport.Extensions.csproj" />
+    <ProjectReference Include="..\TradeSummaryReport.ObjectBuilder\TradeSummaryReport.ObjectBuilder.csproj" />
+    <ProjectReference Include="..\TradeSummaryReport.Unit\TradeSummaryReport.Unit.csproj" />
+  </ItemGroup>
+
+</Project>
