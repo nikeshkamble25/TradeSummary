@@ -1,5 +1,9 @@
 # Trade Summary Report
 
+**Application Architecture**
+
+![Alt text](images/arc.png?raw=true "")
+
 **Steps to run this application**
 
 1. Check out a project or download zip file from Git
@@ -15,7 +19,7 @@
 
 **Functionality**
 
-1. After running this application, you will be provided two options existing input 1 and 2
+1. After running this application, you will be provided two options expecting an input 1 or 2
 ![Alt text](images/3.png?raw=true "")
 
 2. 1st option will give you trade summary(this would take 3 to 5 seconds to load as its reading data from multiple files source)
