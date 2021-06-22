@@ -1,23 +1,25 @@
-# BartenderJoe
+# Trade Summary Report
 
 **Steps to run this application**
 
 1. Check out a project or download zip file from Git
 
-2. Go to checked out folder and open command promt from the same folder
-3. execute below command (docker-compose build)
+2. Open Project in Visual Studio
+![Alt text](images/0.png?raw=true "")
+
+3. Change **_tradePath_** and **_securityPath_** as per your local PC configuation
 ![Alt text](images/1.png?raw=true "")
-3. execute below command (docker-compose up) to launch application
+
+4. Run Project 
 ![Alt text](images/2.png?raw=true "")
-4. Application would run on below Urls
-  a. **SPA**: http://localhost:4200/
-  b. **Api**: http://localhost:5000/
-![Alt text](images/3.png?raw=true "")
-![Alt text](images/4.png?raw=true "")
 
 **Functionality**
-1. Select product type 1 or 2
+
+1. After running this application, you will be provided two options existing input 1 and 2
+![Alt text](images/3.png?raw=true "")
+
+2. 1st option will give you trade summary(this would take 3 to 5 seconds to load as its reading data from multiple files source)
+![Alt text](images/4.png?raw=true "")
+
+3. 2nd option will give you Impure trades details
 ![Alt text](images/5.png?raw=true "")
-2. After selection associated product details will come up
-![Alt text](images/6.png?raw=true "")
-3. All activity would log as per deriavtive declaration
