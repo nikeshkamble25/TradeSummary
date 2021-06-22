@@ -1,5 +1,10 @@
 # Trade Summary Report
 
+**Prerequisite**
+
+1. .Net 5
+2. Visual Studio 2019
+
 **Application Architecture**
 
 ![Alt text](images/arc.png?raw=true "")
