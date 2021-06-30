@@ -1,0 +1,5 @@
+langage: csharp
+solution: TradeSummaryReport.sln
+script:
+    - dotnet restore
+    - dotnet test
