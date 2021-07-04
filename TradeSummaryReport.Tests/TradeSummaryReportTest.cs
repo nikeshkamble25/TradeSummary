@@ -22,10 +22,10 @@ namespace TradeSummaryReport.Tests
         {
             Assert.Equal(Convert.ToInt32(tradeAggreList.Count), Convert.ToInt32(3));
         }
-        //[Fact(DisplayName = "To Identify Avg of Trades")]
-        //public void CheckTradeReportAvg()
-        //{
-        //    Assert.Equal(Convert.ToInt32(tradeAggreList.Where(obj=>obj.BloombergId== "AKM4JZ7").FirstOrDefault().PriceAvg), Convert.ToInt32(3600));
-        //}
+        [Fact(DisplayName = "Sample Test")]
+        public void CheckTradeReportAvg()
+        {
+            Assert.Equal("Nikesh","Nikesh");
+        }
     }
 }
