@@ -15,7 +15,7 @@ namespace TradeSummaryReport.Tests
         {
             string path = Directory.GetCurrentDirectory();
             ObjectReader objectReader = new ObjectReader();
-            tradeAggreList = objectReader.GetAggregatedTrades(path + @"\TradeFiles", path + @"\TradeFiles\Securities.xml");
+            tradeAggreList = objectReader.GetAggregatedTrades(path + @"/TradeFiles", path + @"/TradeFiles/Securities.xml");
         }
         [Fact(DisplayName ="To Identify Count of Trades")]
         public void CheckTradeReportObject()
