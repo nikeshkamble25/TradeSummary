@@ -6,3 +6,5 @@ script:
     - dotnet restore
     - dotnet build
     - dotnet test
+    - dotnet run -p 'TradeSummaryReport/TradeSummaryReport.csproj'
+    - 1 -skip-keypress
