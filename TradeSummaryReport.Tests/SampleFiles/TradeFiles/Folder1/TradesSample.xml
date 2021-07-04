@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trades>
+  <trade>
+    <tradingAccount>123456</tradingAccount>
+    <tradeDate>20150424</tradeDate>
+    <settleDate>20150730</settleDate>
+    <actualDate>20150424</actualDate>
+    <transactionCode>Sell</transactionCode>
+    <quantity>900.00</quantity>
+    <tradeCurrency>USD</tradeCurrency>
+    <settlementCurrency>USD</settlementCurrency>
+    <price>13.00</price>
+    <execBroker>JPM</execBroker>
+    <security>
+      <id>1</id>
+      <code>AKM4JZ7</code>
+    </security>
+  </trade>
+  <trade>
+    <tradingAccount>111000</tradingAccount>
+    <tradeDate>20150424</tradeDate>
+    <settleDate>20150730</settleDate>
+    <actualDate>20150424</actualDate>
+    <transactionCode>Sell</transactionCode>
+    <quantity>900.00</quantity>
+    <tradeCurrency>USD</tradeCurrency>
+    <settlementCurrency>USD</settlementCurrency>
+    <price>13.00</price>
+    <execBroker>JPM</execBroker>
+    <security>
+      <id>2</id>
+      <code>BKM4JZ7</code>
+    </security>
+  </trade>
+</trades>
