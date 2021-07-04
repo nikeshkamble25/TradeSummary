@@ -1,6 +1,6 @@
 langage: csharp
 mono: none
-dotnet: 5.0.201
+dotnet: 5.0.102
 solution: TradeSummaryReport.sln
 script:
     - dotnet restore
