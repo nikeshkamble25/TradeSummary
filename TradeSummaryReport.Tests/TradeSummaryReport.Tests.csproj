@@ -20,6 +20,6 @@
     <ProjectReference Include="..\TradeSummaryReport.Facade\TradeSummaryReport.Facade.csproj" />
   </ItemGroup>
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="cp &quot;$(SolutionDir)TradeSummaryReport.Tests/SampleFiles&quot; &quot;$(TargetDir)&quot; /S /Y" />
+    <Exec Command="cp -Rf &quot;$(SolutionDir)TradeSummaryReport.Tests/SampleFiles&quot; &quot;$(TargetDir)&quot;" />
   </Target>
 </Project>
