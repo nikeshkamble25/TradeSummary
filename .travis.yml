@@ -6,4 +6,3 @@ script:
     - dotnet restore
     - dotnet build
     - dotnet test
-    - echo -ne '1\n'| dotnet run -p 'TradeSummaryReport/TradeSummaryReport.csproj'   
