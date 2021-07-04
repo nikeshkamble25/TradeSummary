@@ -1,7 +1,12 @@
-langage: csharp
-mono: none
-dotnet: 2.1.502
-solution: TradeSummaryReport.sln
-script:
-    - dotnet restore
-    - dotnet test
+- task: UseDotNet@2
+  displayName: 'Use .NET Core sdk 5.0.100'
+  inputs:
+    packageType: 'sdk'
+    version: '5.0.100'
+    includePreviewVersions: true
+
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet restore'
+  inputs:
+    command: restore
+    projects: '**/*.csproj'
