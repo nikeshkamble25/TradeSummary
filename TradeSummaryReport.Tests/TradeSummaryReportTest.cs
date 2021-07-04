@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
+using System.Runtime.InteropServices;
 using TradeSummaryReport.Dto;
 using TradeSummaryReport.Facade;
 using Xunit;
@@ -15,7 +15,14 @@ namespace TradeSummaryReport.Tests
         {
             string path = Directory.GetCurrentDirectory();
             ObjectReader objectReader = new ObjectReader();
-            tradeAggreList = objectReader.GetAggregatedTrades(path + @"/SampleFiles/TradeFiles", path + @"/SampleFiles/TradeFiles/Securities.xml");
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+            {
+                tradeAggreList = objectReader.GetAggregatedTrades(path + @"\SampleFiles\TradeFiles", path + @"\SampleFiles\TradeFiles\Securities.xml");
+            }
+            else 
+            {
+                tradeAggreList = objectReader.GetAggregatedTrades(path + @"/SampleFiles/TradeFiles", path + @"/SampleFiles/TradeFiles/Securities.xml");
+            }
         }
         [Fact(DisplayName ="To Identify Count of Trades")]
         public void CheckTradeReportObject()
