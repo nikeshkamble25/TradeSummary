@@ -20,6 +20,6 @@
     <ProjectReference Include="..\TradeSummaryReport.Facade\TradeSummaryReport.Facade.csproj" />
   </ItemGroup>
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="XCOPY &quot;$(SolutionDir)TradeSummaryReport.Tests/SampleFiles&quot; &quot;$(TargetDir)&quot; /S /Y" />
+    <Exec Command="cp &quot;$(SolutionDir)TradeSummaryReport.Tests/SampleFiles&quot; &quot;$(TargetDir)&quot; /S /Y" />
   </Target>
 </Project>
