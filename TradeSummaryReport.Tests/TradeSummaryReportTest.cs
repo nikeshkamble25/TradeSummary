@@ -17,7 +17,7 @@ namespace TradeSummaryReport.Tests
             ObjectReader objectReader = new ObjectReader();
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
             {
-                tradeAggreList = objectReader.GetAggregatedTrades(path + @"\SampleFiles\TradeFiles", path + @"\SampleFiles\TradeFiles\Securities.xml");
+                tradeAggreList = objectReader.GetAggregatedTrades(path + @"\TradeFiles", path + @"\TradeFiles\Securities.xml");
             }
             else 
             {
